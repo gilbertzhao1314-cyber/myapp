@@ -1,0 +1,16 @@
+sudo apt update && sudo apt install -y git
+
+git config --global user.name "gilbert"
+git config --global user.email "gilbert.zhao1314@gmail.com"
+git config --global init.defaultBranch main
+
+
+ssh-keygen -t ed25519 -C "gilbert.zhao1314@gmail.com"
+# 一路回车即可
+cat ~/.ssh/id_ed25519.pub
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBzsQR+DcDXIZ5Uj9E/VQfy3ASYBTF8VR2RIj7cfJC5n gilbert.zhao1314@gmail.com
+
+
+
+ssh -T git@github.com
