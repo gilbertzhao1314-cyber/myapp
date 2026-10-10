@@ -29,3 +29,21 @@ git push -u origin main
 git branch        # 查看本地分支（* 号标记当前所在分支）
 git branch -r     # 查看远程分支（会看到 origin/main）
 git branch -a     # 全部
+
+修改代码后上传到 GitHub
+
+在项目目录（/goapp/myapp）里执行三步：
+
+bash
+git add .
+git commit -m "说明这次改了什么"
+git push
+
+git add .	把所有改动放进"暂存区"（准备提交的清单）
+git commit -m "..."	把暂存区的内容打包成一次"提交"，保存在本地历史里
+git push	把本地的提交上传到 GitHub
+
+注意：只 commit 不 push，GitHub 上是看不到的，改动只存在你本地
+
+git status      # 哪些文件被修改/新增/删除
+git diff        # 具体改了哪几行
