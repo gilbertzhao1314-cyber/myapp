@@ -14,3 +14,18 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBzsQR+DcDXIZ5Uj9E/VQfy3ASYBTF8VR2RIj7cfJC5n
 
 
 ssh -T git@github.com
+
+
+cd /path/to/你的项目
+git init                      # 如果已经是 git 仓库则跳过
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote set-url origin git@github.com:gilbertzhao1314-cyber/myapp.git
+git remote -v        # 确认地址已改对
+git push -u origin main
+
+
+git branch        # 查看本地分支（* 号标记当前所在分支）
+git branch -r     # 查看远程分支（会看到 origin/main）
+git branch -a     # 全部
